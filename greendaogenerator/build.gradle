@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "de.greenrobot:greendao-generator:2.0.0"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+/*解决代码中的中文注释可能会引起Gradle报错gradle2.0+*/
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZDataStore</string>
+    <string name="name_tip">请输入账号</string>
+    <string name="passwd_tip">请输入密码</string>
+    <string name="remember_passwd">记住密码</string>
+    <string name="submit">提交</string>
+    <string name="sp">SharedPreferences存储</string>
+    <string name="file">文件存储</string>
+    <string name="sqlite">Sqlite存储</string>
+    <string name="greendao">GreenDao使用</string>
+    <string name="save_memory">保存到内存</string>
+    <string name="save_sd">保存到SD卡</string>
+    <string name="read_memory">读取内存</string>
+    <string name="read_sd">读取SD卡</string>
+    <string name="read_text">读取文件数据结果显示</string>
+</resources>
