@@ -13,7 +13,7 @@ public class DBHelper extends DaoMaster.OpenHelper {
     public static final String DBNAME = "ibookerdata.db";
 
     public DBHelper(Context context, String name) {
-        super(context, name, null);
+        this(context, name, null);
     }
 
     public DBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory) {

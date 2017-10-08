@@ -25,7 +25,7 @@ public class GreenDaoManager {
         }
     }
 
-    // 单例
+    // 单例模式
     public static GreenDaoManager getInstance() {
         if (mInstance == null) {
             synchronized (GreenDaoManager.class) {
@@ -45,11 +45,13 @@ public class GreenDaoManager {
         return mDaoSession;
     }
 
+    // 获取新的DaoSession
     public DaoSession getNewSession() {
         mDaoSession = mDaoMaster.newSession();
         return mDaoSession;
     }
 
+    // 打印查询日志
     public static void enableQueryBuilderLog(){
         QueryBuilder.LOG_SQL = true;
         QueryBuilder.LOG_VALUES = true;

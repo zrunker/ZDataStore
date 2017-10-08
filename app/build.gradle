@@ -37,9 +37,9 @@ apply plugin: 'org.greenrobot.greendao' // apply plugin
 
 // 配置数据库的信息
 greendao {
-    schemaVersion 1
-    daoPackage 'cc.ibooker.greendao'
-    targetGenDir 'src/main/java'
+    schemaVersion 1 // 对应当前数据库版本
+    daoPackage 'cc.ibooker.greendao' // 由GreenDao自动生成代码所在的包名，默认的是在项目包下面新建一个gen。
+    targetGenDir 'src/main/java' // 设置自动生成代码的目录
 }
 
 

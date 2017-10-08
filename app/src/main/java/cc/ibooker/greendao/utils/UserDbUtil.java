@@ -39,7 +39,7 @@ public class UserDbUtil {
     }
 
     // 查询全部用户信息
-    private List<User> queryAll() {
+    public List<User> queryAll() {
         List<User> users = userDao.queryBuilder().list();
         for (User user : users)
             Log.d("queryAll", user.toString());
